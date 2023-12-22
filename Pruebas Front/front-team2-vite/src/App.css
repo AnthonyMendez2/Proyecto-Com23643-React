@@ -1,4 +1,138 @@
-#root {
+
+.movie-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f5f5f5; /* Fondo claro */
+  padding: 20px; /* Ajusta según sea necesario */
+}
+
+.movie-card {
+  width: 18%;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+  background: linear-gradient(180deg, #cfd8dc, #90a4ae); /* Rango entre grises y azules */
+  transition: transform 0.3s ease-in-out; /* Efecto de transición suave */
+
+  /* Estilos para la adaptabilidad responsive */
+  @media (max-width: 768px) {
+    width: 40%;
+  }
+
+  @media (max-width: 480px) {
+    width: 80%;
+  }
+
+  &:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón sobre la tarjeta */
+  }
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Estilos anteriores ... */
+
+.star {
+  font-size: 20px;
+  color: #ddd; /* Color de estrella no marcada */
+  cursor: pointer;
+  transition: color 0.3s ease-in-out; /* Efecto de transición de color suave */
+
+  &:hover {
+    color: #ffac33; /* Color de estrella al pasar el ratón */
+  }
+}
+
+.rated {
+  color: #ffac33; /* Color de estrella marcada */
+}
+
+
+
+
+.perfil {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #f5f5f5; /* Fondo claro */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+}
+
+.perfil-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.div-editable-perfil,
+.div-text-perfil {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.text-perfil {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.input-perfil,
+.textarea-perfil {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.div-btn-perfil {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-editar-perfil {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Efecto de transición de color suave */
+
+  &:hover {
+    background-color: #45a049; /* Color de fondo al pasar el ratón */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +173,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
